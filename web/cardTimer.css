@@ -1,0 +1,30 @@
+.progressValues {
+	font-size: x-small;
+}
+
+.startButton {
+	background-color: #4CAF50;
+	padding: 3px 8px;
+	font: inherit;
+	outline: inherit;
+}
+
+.startButton:hover {
+	background-color: #119216;
+	transition: 0.7s;
+}
+
+.timerButton {
+	background: none;
+	border: none;
+	padding: 0;
+	color: inherit;
+	font: inherit;
+	outline: inherit;
+	border-radius: 0px;
+}
+
+.proportionDone {
+	white-space: pre;
+	padding: 0px;
+}

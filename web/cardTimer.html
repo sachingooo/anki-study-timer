@@ -1,0 +1,32 @@
+<span class="hitem" style="vertical-align: middle; padding-left: 0px">
+	<table>
+		<tr id="cardTimerElement">
+			<td id="leftTimerButtons">
+				<button id="timerStartButton" onclick="startTimer()" class="startButton">Start</button>
+				<button id="playPauseButton" onclick="toggleRunning()" class="timerButton"
+					style="display: none;"></button>
+			</td>
+			<td id="timerCounts" class="progressValues">
+				<div>
+					<input id="numCardsField" type="number" min="0" max="9999" placeholder="# Cards"
+						class="progressValues" onblur="autoComputeTimeForTimer()"></input>
+				</div>
+				<div>
+					<input id="numSecsField" type="number" min="0" max="7200" placeholder="Time (s)"
+						class="progressValues" onblur="roundEnteredTime()"></input>
+				</div>
+				<div id="cardCountElement" style="display: none;" class="progressValues" style="width: 95px;">
+					<span id="cardsDone" class="proportionDone"></span>
+					<span id="cardString" class="proportionDone" style="padding-left: 2px"></span>
+				</div>
+				<div id="timeElement" style="display: none;" class="progressValues" style="width: 95px;">
+					<span id="timeDone" class="proportionDone"></span>
+					<span id="timeString" class="proportionDone" style="padding-left: 2px"></span>
+				</div>
+			</td>
+			<td id="rightTimerButtons">
+				<button id="resetButton" class="timerButton" onclick="resetTimer()" style="display: none;"></button>
+			</td>
+		</tr>
+	</table>
+</span>
